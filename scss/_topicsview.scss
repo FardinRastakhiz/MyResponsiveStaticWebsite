@@ -1,0 +1,77 @@
+
+.section-title{
+    margin-top: 2rem;
+    height: 3rem;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    a{
+        text-decoration: none; 
+        border-bottom: 0.15rem $secondary-color solid;
+        padding: 0 2rem;
+    }
+}
+
+.topics-view{
+    width: 100%;
+    $skills-height: 24rem;
+    height: $skills-height;
+    border-bottom: solid 1px $secondary-color;
+
+    .topic-items{
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        .topic-item{ 
+            display: inline-block;
+            margin: 2rem;
+            height: calc(#{$skills-height} - 7rem);
+            width: 20rem;
+            vertical-align: top;
+            
+            .portrait{
+                text-decoration: none;
+                @include easeOut;
+                img{
+                    @include easeOut;
+                    width: 8rem;
+                    height: 8rem;
+                    @include color-filter(lighten($secondary-color, 60%), 8rem);
+                    opacity: 0.75;
+                }
+                .item-title{
+                    @include easeOut;
+                    line-height: 1;
+                    color: set-text-color($primary-color);
+                    margin: 0.5rem 0;
+                    u{
+                        @include easeOut;
+                        text-decoration: none;
+                        border-bottom: 2px $secondary-color solid;
+                        padding: 0 2rem;
+                    }
+                }
+
+                &:hover{
+                    img{
+                        width: 9rem;
+                        height: 9rem;
+                        opacity: 0.95;
+                        @include color-filter($secondary-color, 15rem);
+                    }
+                    .item-title{
+                        color: $secondary-color;
+                        u{
+                            padding: 0 4rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

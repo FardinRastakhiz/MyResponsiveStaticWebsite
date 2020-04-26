@@ -1,0 +1,110 @@
+
+    .abilities-show{
+        .ability{
+
+            // Game Development
+            .card:nth-child(1) svg circle:nth-child(2){
+                stroke: rgb(186, 186, 186); 
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Object Oriented Programming
+            .card:nth-child(2) svg circle:nth-child(2){
+                stroke: #bf7fff;
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Art
+            .card:nth-child(3) svg circle:nth-child(2){
+                stroke: #de4e25;
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Math
+            .card:nth-child(4) svg circle:nth-child(2){
+                stroke: rgb(130, 243, 0);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // English
+            .card:nth-child(5) svg circle:nth-child(2){
+                stroke: rgb(243, 130, 0);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+        }
+
+        .other-abilities{
+
+            // Unity
+            .card:nth-child(1) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 75)/100);
+            }
+
+            // C#
+            .card:nth-child(2) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 75)/100);
+            }
+
+            // Photoshop
+            .card:nth-child(3) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // 3DS Max
+            .card:nth-child(4) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Python
+            .card:nth-child(5) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Github
+            .card:nth-child(6) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // SQL Server
+            .card:nth-child(7) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // HTML
+            .card:nth-child(8) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // CSS
+            .card:nth-child(9) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Javascript
+            .card:nth-child(10) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Word
+            .card:nth-child(11) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+
+            // Powerpoint
+            .card:nth-child(12) svg circle:nth-child(2){
+                stroke: rgb(0, 243, 182);
+                stroke-dashoffset: calc(440 - (440 * 10)/100);
+            }
+        }
+    }

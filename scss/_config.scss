@@ -1,0 +1,24 @@
+$primary-color: #fff;
+$secondary-color: #ff0000;
+$tertiary-color: rgb(51, 51, 51);
+$header-height: 5rem;
+$footer-height: 3rem;
+
+@function set-text-color($color){
+    @if (lightness($color)<40){
+        @return #ffffff;
+    } @else{
+        @return #000000;
+    }    
+}
+
+@mixin easeOut {
+    transition: all 0.3s ease-out;
+}
+
+@mixin color-filter($color, $size){
+    
+    filter:  brightness(50%) sepia(100%) hue-rotate(0deg) saturate(10000%)
+    saturate(saturation($color)+50%) brightness(lightness($color)+50%) hue-rotate(hue($color))
+    opacity(opacity($color)) drop-shadow(0 0 $size/4.0 $color);
+}

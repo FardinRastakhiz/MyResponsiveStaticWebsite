@@ -3,77 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e4ad54367f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Fardin Rastakhiz - home page</title>
 </head>
 <body>
     <header>
         <div id="web-title">
-            <h1><span>Fardin</span> Rastakhiz</h1>
-            <h3>Game <span>Developer</span></h3>
+            <h1><span class="secondary-color">Fardin</span> Rastakhiz</h1>
+            <div class="subtitle">
+                <h2>Game <span class="secondary-color">Developer</span></h2>
+                <h5 class="state"><span>&#x25CF;</span> looking for job</h5>
+            </div>
         </div>
         <div class="social-icons">
-            <a>
-                <i class="fab fa-github"></i>
+            <a class="social" href="https://github.com/postcss/postcss-color-function">
+                <img src="./img/icons/github.png" alt="github" class="icon">
+                github
             </a>
-            <a>
-                <i class="fab fa-telegram"></i>
+            <a class="social" href="https://github.com/postcss/postcss-color-function">
+                <img src="./img/icons/linkedin.png" alt="linkedin" class="icon">
+                linkedin
             </a>
-            <a>
-                <i class="fab fa-linkedin-in"></i>
+            <a class="social" href="https://github.com/postcss/postcss-color-function">
+                <img src="./img/icons/telegram.png" alt="telegram" class="icon">
+                telegram
             </a>
         </div>
         <nav class="header-nav">
             <ul class="nav-items">
-                <li class="nav-item current">
-                    Home
-                </li>
-                <li class="nav-item">
-                    Work
-                </li>
-                <li class="nav-item">
-                    About
-                </li>
-                <li class="nav-item">
-                    Contact
+                <li>
+                    <a class="nav-item current" href="./index.html">
+                        Home
+                    </a>
+                </li><li>
+                    <a class="nav-item" href="./index.html">
+                        Work
+                    </a>
+                </li><li>
+                    <a class="nav-item" href="./index.html">
+                        About
+                    </a>
+                </li><li>
+                    <a class="nav-item" href="./index.html">
+                        Contact
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="show-off">
-            <a href="" class="banner"></a>
+            <a  class="banner">
+                <img src="./img/banners/ForbiddenSpeed-showoff.jpg" alt="ForbiddenSpeed">
+            </a>
             <div class="description">
-                <h1 class="description-title">Forbidden Speed</h1>
-                <h6 class="descripion-brief">PC Game, Racing</h6>
-                <p class="description-content">description content</p>
+                <h1 class="description-title">
+                    <a  ><u>Forbidden Speed</u></a>
+                </h1>
+                <h6 class="descripion-brief">Racing PC Game</h6>
+                <p class="description-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum leo vitae diam condimentum luctus. In a vehicula elit. Donec tempor turpis ut quam porttitor, aliquet luctus quam elementum. </p>
             </div>
         </div>
-        <div class="skill-categories">
-            <div>
+        
+        <div class="abilities-show">
+            <div class="section-title">
+                <a>Skill set</a>
+            </div>
+            <div class="all-abilities">
+                <div class="ability">
+                    <a  class="card">
+                        <div class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>85<span>%</span></h2>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <img src="./img/icons/Unity.png" alt="unity">G-Develop
+                            </div>
+                            <div class="text-sub">
+                                Based on my games average rating
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>60<span>%</span></h2>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <img src="./img/icons/csharp.png" alt="C#">OOP
+                            </div>
+                            <div class="text-sub">
+                                Based on average online text scores!
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>60<span>%</span></h2>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <img src="./img/icons/3dsmax.png" alt="Max">Art
+                            </div>
+                            <div class="text-sub">
+                                Based on average user reviews!
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>60<span>%</span></h2>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <img src="./img/icons/csharp.png" alt="math">MATH
+                            </div>
+                            <div class="text-sub">
+                                Based on GRE score!
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>65<span>%</span></h2>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <img src="./img/icons/3dsmax.png" alt="english">ENGLISH
+                            </div>
+                            <div class="text-sub">
+                                Based on IELT score!
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-abilities">
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>Unity3D</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>C#</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>Photoshop</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>3DS Max</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>Python</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>GitHub</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>SQL Server</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>HTML5</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>CSS</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>JS</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>Word</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a  class="card">
+                        <div  class="box">
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                    <circle cx="70" cy="70" r=70></circle>
+                                </svg>
+                                <div class="text">
+                                    <h2>PowerPoint</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="topics-view">
+            <div class="section-title">
                 <a>All Categories</a>
             </div>
-            <ul class="skill-items">
-                <li class="skill-item">
-                    <div class="portrait"></div>
-                    <h3 class="item-title">Unity</div>
-                    <div class="p1">I know a lot in Unity!</div>
+            <ul class="topic-items">
+                <li class="topic-item">
+                    <a  class="portrait">
+                        <img src="./img/icons/Unity.png" alt="Games">
+                        <h2 class="item-title"><u>Games</u></h2>
+                    </a>
+                    <div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum leo vitae diam condimentum luctus.</div>
                 </li>
-                <li class="skill-item">
-                    <div class="portrait"></div>
-                    <h3 class="item-title">C#</div>
-                    <div class="p1">I know a lot in c#!</div>
+                <li class="topic-item">
+                    <a  class="portrait">
+                        <img src="./img/icons/csharp.png" alt="Tools">
+                        <h2 class="item-title"><u>Tools</u></h2>
+                    </a>
+                    <div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum leo vitae diam condimentum luctus.</div>
                 </li>
-                <li class="skill-item">
-                    <div class="portrait"></div>
-                    <h3 class="item-title">3DS Max</div>
-                    <div class="p1">I know a lot in 3DS Max!</div>
+                <li class="topic-item">
+                    <a  class="portrait">
+                        <img src="./img/icons/3dsmax.png" alt="Arts">
+                        <h2 class="item-title"><u>Arts</u></h2>
+                    </a>
+                    <div class="p1">Lorem ipsum dolor sit amet,</div>
                 </li>
             </ul>
         </div>
     </main>
     <footer>
-
+        <span>Fardin Rastakhiz, &copy; copywrite 2020</span>
     </footer>
 </body>
 </html>

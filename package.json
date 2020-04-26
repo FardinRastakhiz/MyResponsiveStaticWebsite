@@ -4,11 +4,22 @@
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o src/ --recursive"
   },
   "author": "Fardin Rastakhiz",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "gulp": "^4.0.2",
+    "node-sass": "^4.13.1",
+    "postcss": "^7.0.27"
+  },
+  "devDependencies": {
+    "gulp-postcss": "^8.0.0",
+    "postcss-calc": "^7.0.2",
+    "postcss-color-function": "^4.1.0",
+    "postcss-functions": "^3.0.0",
+    "postcss-mixins": "^6.2.3",
+    "postcss-preset-env": "^6.7.0",
+    "precss": "^4.0.0"
   }
 }

@@ -1,0 +1,59 @@
+
+.show-off{
+    $show-off-height: 25rem;
+    height: $show-off-height;
+    background-color: $secondary-color;
+    border-bottom: $secondary-color 3px solid ;
+    .banner{
+        float: left;
+        width: $show-off-height*1.778;
+        height: $show-off-height;
+        border-right: 3px solid lighten($tertiary-color, 20);
+        img{
+            @include easeOut;
+            width: 100%;
+            height: 100%;
+        }
+
+        :hover{
+            opacity: 0.7;
+        }
+    }
+
+    .description{
+        float: left;
+        height: $show-off-height;
+        width: calc(100% - #{$show-off-height}*1.778 - 3px);
+        color: set-text-color($tertiary-color);
+        background-color: $tertiary-color;
+        .description-title{
+            margin: 4rem 2rem 1rem 3rem;
+            line-height: 0.5;
+            a{
+                text-decoration: none;
+                color: set-text-color($tertiary-color);
+                u{
+                    text-decoration: none;
+                    border-bottom: 2px solid $secondary-color;
+                    padding-right: 3rem;
+                    @include easeOut;
+                }
+
+                :hover{
+                    color: $secondary-color;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .descripion-brief{
+            line-height: 0;
+            margin: 1.5rem 1rem 1rem 3rem;
+        }
+
+        .description-content{
+            margin: 0 2rem;
+        }
+
+    }
+}

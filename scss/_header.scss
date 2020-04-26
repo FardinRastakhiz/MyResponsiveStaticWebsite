@@ -1,0 +1,112 @@
+$header-title-width: 23rem;
+$header-nav-width: 30rem;
+
+header {
+    height: $header-height;
+    border-bottom: $secondary-color 3px solid ;
+    overflow: hidden;
+
+    #web-title{
+        height: $header-height;
+        float: left;
+        color:set-text-color($primary-color);
+        min-width: $header-title-width;
+        h1{
+            padding: 1.3rem 2rem 1rem 2rem;
+            line-height: 0.2;
+        }
+        
+        .subtitle{
+            h2{
+                display: inline;
+                padding-left: 2rem;
+                line-height: 0.4;
+                opacity: 0.7;
+            }
+            h5{
+                display: inline;
+                //margin: 0 0rem 0 1rem;
+                color: #00ff00;
+                span{
+                    line-height: 0;
+                    font-size: 1.6rem;
+                    position: relative;
+                    top: 0.2rem;
+                }
+            }
+        }
+    }
+
+    .social-icons{
+        width: calc(100% - (#{$header-title-width} + #{$header-nav-width}));
+        height: $header-height;
+        line-height: $header-height;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        float: left;
+        text-align: right;
+        .social{
+            text-decoration: none;
+            color:set-text-color($primary-color);
+            margin: 0 0.5rem;
+            opacity: 0.7;
+            @include easeOut;
+            img{
+                width: 1.2rem; 
+                height: 1.2rem;
+                transform: translateY(0.15rem);
+                @include color-filter(set-text-color($primary-color), 1.2rem);
+                @include easeOut;
+            }
+            &:hover{
+                text-decoration: underline;
+                opacity: 1;
+                img{
+                    width: 1.5rem; 
+                    height: 1.5rem;
+                    transform: translateY(0.15rem);
+                    filter: color-to-filter(set-text-color($primary-color));
+                }
+            }
+        }
+    }
+
+    nav {
+        min-width: $header-nav-width;
+        float: right;
+        text-align: right;
+        .nav-items{
+            padding-right: 2rem;
+            height: 100%;
+
+            li{
+                display: inline-block;
+                .nav-item{
+                    display: inline-block;
+                    color:set-text-color($primary-color);
+                    opacity: 0.75;
+                    text-decoration: none;
+                    background: darken($primary-color, 7);
+                    border-left: rgba($secondary-color, 0.3) 1px solid;
+                    font-size: 1.3rem;
+                    
+                    line-height: $header-height*1.2;
+                    padding: 0 1.5rem;
+                    height: $header-height;
+                    @include easeOut();
+                    &:hover{
+                        background-color: rgba($secondary-color, 0.1);
+                        color: rgba(set-text-color($primary-color), 0.75);
+                        font-weight: 700;
+                        opacity: 1;
+                    }
+
+                    &.current{
+                        color: $secondary-color;
+                    }
+                }
+
+            }
+        }
+    }
+}
