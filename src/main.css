@@ -3,9 +3,10 @@
   padding: 0; }
 
 body {
+  position: relative;
   background: #fff;
   color: #000000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Trebuchet MS', sans-serif;
   line-height: 1.5; }
 
 .primary-color {
@@ -27,9 +28,21 @@ body {
     border-bottom: 0.15rem #ff0000 solid;
     padding: 0 2rem; }
 
+.page-title {
+  padding: 2rem;
+  z-index: 1; }
+
+.paragraph-1, .contact-form {
+  margin: 0.5rem 2rem 0 2rem;
+  font-size: 1.3em;
+  font-family: 'Trebuchet MS';
+  text-align: justify;
+  text-justify: inter-word; }
+
 header {
   height: 5rem;
-  border-bottom: #ff0000 3px solid; }
+  border-bottom: #ff0000 3px solid;
+  z-index: 10; }
   header #web-title {
     height: 5rem;
     float: left;
@@ -109,7 +122,21 @@ header {
             color: #ff0000; }
 
 main {
-  min-height: calc(100vh - 2.5rem); }
+  min-height: calc(100vh - 2.5rem);
+  position: relative;
+  background: url("../img/backgrounds/bg1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0; }
+  main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    z-index: -1; }
   main .show-off {
     height: 25rem;
     background-color: #ff0000;
@@ -423,17 +450,13 @@ main {
     stroke: #333;
     stroke-dashoffset: calc(440 - (440 * 60)/100); }
   main .gallery-view {
-    background-color: #333333;
-    border-bottom: solid 1px #ff0000;
-    color: #ffffff; }
-    main .gallery-view .page-title {
-      padding: 2rem; }
+    border-bottom: solid 1px #ff0000; }
     main .gallery-view .gallery {
       display: flex;
       margin: 0 2rem 2rem 2rem;
       padding: 1rem;
-      background-color: #333333;
-      border: 3px solid #e0e0e0; }
+      border: 3px solid #e0e0e0;
+      z-index: 1; }
       main .gallery-view .gallery .gallery-item {
         margin: 1rem;
         border: 1px solid #fff;
@@ -451,11 +474,64 @@ main {
           background-color: #ddd; }
           main .gallery-view .gallery .gallery-item:hover img {
             border: 1px solid rgba(255, 255, 255, 0); }
+  main #about {
+    width: 100%; }
+    main #about .about-content {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: flex-start; }
+      main #about .about-content .about-text {
+        width: calc(100% - 20em); }
+        main #about .about-content .about-text a {
+          text-decoration: none;
+          color: #222;
+          margin: 2rem;
+          line-height: 4rem;
+          padding: 0.5rem 1rem;
+          background: #ddd;
+          border: 2px solid #ff0000; }
+          main #about .about-content .about-text a img {
+            width: 1.2rem;
+            height: 1.2rem;
+            transform: translateY(0.15rem);
+            filter: brightness(50%) sepia(100%) hue-rotate(0deg) saturate(10000%) saturate(50%) brightness(50%) hue-rotate(0deg) opacity(1) drop-shadow(0 0 0.3rem #000000);
+            transition: all 0.3s ease-out; }
+      main #about .about-content .about-image {
+        border-radius: 16rem;
+        border: #ff0000 solid 2px;
+        transition: 0.5s ease-out; }
+        main #about .about-content .about-image:hover {
+          transform: translateY(-0.5rem);
+          box-shadow: 0.5rem 1rem 2rem rgba(255, 0, 0, 0.3); }
+  main #contact {
+    height: 100vh;
+    border-bottom: 2px solid #ff0000; }
+    main #contact .contact-form {
+      margin: 0 4rem; }
+      main #contact .contact-form input[type=text], main #contact .contact-form [type=email], main #contact .contact-form textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ff0000;
+        box-sizing: border-box;
+        margin: 0.5rem 0 1rem 0; }
+      main #contact .contact-form input[type=submit] {
+        background-color: #fff;
+        color: #ff0000;
+        padding: 12px 30px;
+        border: 1px solid #ff0000;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s; }
+        main #contact .contact-form input[type=submit]:hover {
+          background-color: #cccccc; }
 
 footer {
   background-color: #333333;
   color: #fff;
-  height: 2.5rem; }
+  height: 2.5rem;
+  z-index: 10; }
   footer span {
     margin-left: 2rem;
     line-height: 2.5rem;

@@ -1,20 +1,16 @@
 
 
-.gallery-view{
-    background-color: $tertiary-color;
-    border-bottom: solid 1px $secondary-color;
-    color: set-text-color($tertiary-color);
 
-    .page-title{
-        padding: 2rem;
-    }
+.gallery-view{
+    border-bottom: solid 1px $secondary-color;
+
 
     .gallery{
         display: flex;
         margin: 0 2rem 2rem 2rem;
         padding: 1rem;
-        background-color:  $tertiary-color;
         border: 3px solid #e0e0e0;
+        z-index: 1;
 
         .gallery-item{
             margin: 1rem;

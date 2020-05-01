@@ -5,10 +5,12 @@
 }
 
 body {
+    position: relative;
     background: $primary-color;
     color : set-text-color($primary-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
+    
 }
 
 .primary-color{
@@ -33,4 +35,17 @@ body {
         border-bottom: 0.15rem $secondary-color solid;
         padding: 0 2rem;
     }
+}
+
+.page-title{
+    padding: 2rem;
+    z-index: 1;
+}
+
+.paragraph-1, .contact-form {
+    margin: 0.5rem 2rem 0 2rem;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS';
+    text-align: justify;
+    text-justify: inter-word;
 }

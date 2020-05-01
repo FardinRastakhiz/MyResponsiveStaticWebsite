@@ -1,0 +1,40 @@
+
+
+#about{
+    width: 100%;
+    .about-content{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        .about-text{
+            width: calc(100% - 20em);
+            a{
+                text-decoration: none;
+                color: #222;
+                margin: 2rem;
+                line-height: 4rem;
+                padding: 0.5rem 1rem;
+                background: #ddd;
+                border: 2px solid $secondary-color;
+                img{
+                    width: 1.2rem; 
+                    height: 1.2rem;
+                    transform: translateY(0.15rem);
+                    @include color-filter(set-text-color($primary-color), 1.2rem);
+                    @include easeOut;
+                }
+            }
+        }
+        .about-image{
+            border-radius: 16rem;
+            border: $secondary-color solid 2px;
+            transition: 0.5s ease-out;
+            &:hover{
+                transform: translateY(-0.5rem);
+                box-shadow: 0.5rem 1rem 2rem rgba($secondary-color, 0.3);
+            }
+        }
+    } 
+}

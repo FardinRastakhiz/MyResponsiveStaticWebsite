@@ -4,6 +4,7 @@ $header-nav-width: 30rem;
 header {
     height: $header-height;
     border-bottom: $secondary-color 3px solid ;
+    z-index: 10;
     //overflow: hidden;
     #web-title{
         height: $header-height;

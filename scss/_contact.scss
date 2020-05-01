@@ -1,0 +1,28 @@
+
+#contact{
+    height: 100vh;
+    border-bottom: 2px solid $secondary-color;
+    .contact-form{
+        margin: 0 4rem;
+        input[type=text], [type=email], textarea{
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid $secondary-color;
+            box-sizing: border-box;
+            margin: 0.5rem 0 1rem 0;
+        }
+        input[type=submit]{
+            background-color: $primary-color;
+            color: $secondary-color;
+            padding: 12px 30px;
+            border: 1px solid $secondary-color;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover{
+                background-color: darken($primary-color, 20);
+            }
+        }
+    }
+}
