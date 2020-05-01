@@ -18,3 +18,19 @@ body {
 .secondary-color {
     color: $secondary-color;
 }
+
+
+.section-title{
+    margin-top: 2rem;
+    height: 3rem;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    a{
+        text-decoration: none; 
+        border-bottom: 0.15rem $secondary-color solid;
+        padding: 0 2rem;
+    }
+}

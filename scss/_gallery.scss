@@ -1,0 +1,44 @@
+
+
+.gallery-view{
+    background-color: $tertiary-color;
+    border-bottom: solid 1px $secondary-color;
+    color: set-text-color($tertiary-color);
+
+    .page-title{
+        padding: 2rem;
+    }
+
+    .gallery{
+        display: flex;
+        margin: 0 2rem 2rem 2rem;
+        padding: 1rem;
+        background-color:  $tertiary-color;
+        border: 3px solid #e0e0e0;
+
+        .gallery-item{
+            margin: 1rem;
+            border: 1px solid #fff;
+            @include easeOut();
+            text-align: center;
+            cursor: pointer;
+
+            img{
+                @include easeOut();
+                border: 1px solid #ccc;
+            }
+            p{
+                padding: 0 1rem 1rem 1rem;
+                text-align: left;
+            }
+            &:hover{
+                border: 1px solid #000;
+                background-color: #ddd;
+                
+                img{
+                    border: 1px solid rgba(255, 255, 255, 0);
+                }
+            }
+        }
+    }
+}

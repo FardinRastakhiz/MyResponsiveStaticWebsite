@@ -4,8 +4,7 @@ $header-nav-width: 30rem;
 header {
     height: $header-height;
     border-bottom: $secondary-color 3px solid ;
-    overflow: hidden;
-
+    //overflow: hidden;
     #web-title{
         height: $header-height;
         float: left;

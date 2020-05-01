@@ -14,10 +14,22 @@ body {
 .secondary-color {
   color: #ff0000; }
 
+.section-title {
+  margin-top: 2rem;
+  height: 3rem;
+  line-height: 1;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold; }
+  .section-title a {
+    text-decoration: none;
+    border-bottom: 0.15rem #ff0000 solid;
+    padding: 0 2rem; }
+
 header {
   height: 5rem;
-  border-bottom: #ff0000 3px solid;
-  overflow: hidden; }
+  border-bottom: #ff0000 3px solid; }
   header #web-title {
     height: 5rem;
     float: left;
@@ -147,18 +159,6 @@ main {
         margin: 1.5rem 1rem 1rem 3rem; }
       main .show-off .description .description-content {
         margin: 0 2rem; }
-  main .section-title {
-    margin-top: 2rem;
-    height: 3rem;
-    line-height: 1;
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold; }
-    main .section-title a {
-      text-decoration: none;
-      border-bottom: 0.15rem #ff0000 solid;
-      padding: 0 2rem; }
   main .topics-view {
     width: 100%;
     height: 24rem;
@@ -184,8 +184,8 @@ main {
             transition: all 0.3s ease-out;
             width: 8rem;
             height: 8rem;
-            -webkit-filter: brightness(50%) sepia(100%) hue-rotate(0deg) saturate(10000%) saturate(50%) brightness(150%) hue-rotate(0deg) opacity(1) drop-shadow(0 0 2rem white);
-                    filter: brightness(50%) sepia(100%) hue-rotate(0deg) saturate(10000%) saturate(50%) brightness(150%) hue-rotate(0deg) opacity(1) drop-shadow(0 0 2rem white);
+            -webkit-filter: brightness(50%) sepia(100%) hue-rotate(0deg) saturate(10000%) saturate(150%) brightness(120%) hue-rotate(0deg) opacity(1) drop-shadow(0 0 2rem #ff6666);
+                    filter: brightness(50%) sepia(100%) hue-rotate(0deg) saturate(10000%) saturate(150%) brightness(120%) hue-rotate(0deg) opacity(1) drop-shadow(0 0 2rem #ff6666);
             opacity: 0.75; }
           main .topics-view .topic-items .topic-item .portrait .item-title {
             -webkit-transition: all 0.3s ease-out;
@@ -436,57 +436,90 @@ main {
             main .abilities-show .all-abilities .other-abilities .card:hover .percent .text h2 {
               fill: none;
               color: #f3f3f3; }
-  main .abilities-show .ability .card:nth-child(1) svg circle:nth-child(2) {
-    stroke: #bababa;
+  main .abilities-show .all-abilities .ability .card:nth-child(1) svg circle:nth-child(2) {
+    stroke: #00a2ff;
     stroke-dashoffset: 396; }
-  main .abilities-show .ability .card:nth-child(2) svg circle:nth-child(2) {
+  main .abilities-show .all-abilities .ability .card:nth-child(2) svg circle:nth-child(2) {
     stroke: #bf7fff;
     stroke-dashoffset: 396; }
-  main .abilities-show .ability .card:nth-child(3) svg circle:nth-child(2) {
-    stroke: #de4e25;
-    stroke-dashoffset: 396; }
-  main .abilities-show .ability .card:nth-child(4) svg circle:nth-child(2) {
+  main .abilities-show .all-abilities .ability .card:nth-child(3) svg circle:nth-child(2) {
     stroke: #82f300;
     stroke-dashoffset: 396; }
-  main .abilities-show .ability .card:nth-child(5) svg circle:nth-child(2) {
+  main .abilities-show .all-abilities .ability .card:nth-child(4) svg circle:nth-child(2) {
+    stroke: #e787a7;
+    stroke-dashoffset: 396; }
+  main .abilities-show .all-abilities .ability .card:nth-child(5) svg circle:nth-child(2) {
     stroke: #f38200;
     stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(1) svg circle:nth-child(2) {
-    stroke: #00f3b6;
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(1) svg circle:nth-child(2) {
+    stroke: #333;
     stroke-dashoffset: 110; }
-  main .abilities-show .other-abilities .card:nth-child(2) svg circle:nth-child(2) {
-    stroke: #00f3b6;
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(2) svg circle:nth-child(2) {
+    stroke: #333;
     stroke-dashoffset: 110; }
-  main .abilities-show .other-abilities .card:nth-child(3) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(4) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(5) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(6) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(7) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(8) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(9) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(10) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(11) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
-  main .abilities-show .other-abilities .card:nth-child(12) svg circle:nth-child(2) {
-    stroke: #00f3b6;
-    stroke-dashoffset: 396; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(3) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 154; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(4) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 176; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(5) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 264; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(6) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 220; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(7) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 286; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(8) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 308; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(9) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 308; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(10) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 220; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(11) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 132; }
+  main .abilities-show .all-abilities .other-abilities .card:nth-child(12) svg circle:nth-child(2) {
+    stroke: #333;
+    stroke-dashoffset: 176; }
+  main .gallery-view {
+    background-color: #333333;
+    border-bottom: solid 1px #ff0000;
+    color: #ffffff; }
+    main .gallery-view .page-title {
+      padding: 2rem; }
+    main .gallery-view .gallery {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 2rem 2rem 2rem;
+      padding: 1rem;
+      background-color: #333333;
+      border: 3px solid #e0e0e0; }
+      main .gallery-view .gallery .gallery-item {
+        margin: 1rem;
+        border: 1px solid #fff;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        text-align: center;
+        cursor: pointer; }
+        main .gallery-view .gallery .gallery-item img {
+          -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+          border: 1px solid #ccc; }
+        main .gallery-view .gallery .gallery-item p {
+          padding: 0 1rem 1rem 1rem;
+          text-align: left; }
+        main .gallery-view .gallery .gallery-item:hover {
+          border: 1px solid #000;
+          background-color: #ddd; }
+          main .gallery-view .gallery .gallery-item:hover img {
+            border: 1px solid rgba(255, 255, 255, 0); }
 
 footer {
   background-color: #333333;

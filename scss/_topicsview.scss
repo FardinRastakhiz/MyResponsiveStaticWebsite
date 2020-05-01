@@ -1,18 +1,4 @@
 
-.section-title{
-    margin-top: 2rem;
-    height: 3rem;
-    line-height: 1;
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    a{
-        text-decoration: none; 
-        border-bottom: 0.15rem $secondary-color solid;
-        padding: 0 2rem;
-    }
-}
 
 .topics-view{
     width: 100%;
@@ -40,7 +26,7 @@
                     @include easeOut;
                     width: 8rem;
                     height: 8rem;
-                    @include color-filter(lighten($secondary-color, 60%), 8rem);
+                    @include color-filter(lighten($secondary-color, 20%), 8rem);
                     opacity: 0.75;
                 }
                 .item-title{
